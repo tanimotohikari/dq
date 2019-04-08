@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "version": "0.5",
+  "name": "check list",
+  "short_name": "checkList",
+  "description": "フロント制作フローチェックリスト",
+  "browser_action": {
+    "default_title": "terumit",
+    "default_popup": "popup.html"
+  },
+  "icons" : {
+     "128": "icon.png"
+  },
+  "content_scripts":[
+    {
+      "matches":["https://*/*","http://*/*"],
+      "js":[
+        "jquery.min.js",
+        "script.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "storage",
+    "unlimitedStorage"
+  ]
+}
