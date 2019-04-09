@@ -1,0 +1,14 @@
+{
+  "name": "dq",
+  "description": "息抜き",
+  "version": null,
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon.png",
+    "128": "icons/icon-large.png"
+  },
+  "browser_action": {
+    "default_title": "dq",
+    "default_popup": "popup/popup.html"
+  }
+}
